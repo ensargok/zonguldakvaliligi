@@ -1,0 +1,37 @@
+name: Bilgi ekrani verilerini guncelle
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"   # yaklaşık 10 dakikada bir (GitHub birkaç dakika geciktirebilir)
+  workflow_dispatch:          # Actions sekmesinden elle çalıştırmak için
+  push:
+    paths: ["config.json", "plugins/**", "ortak.py", "veri_topla.py"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: veri
+  cancel-in-progress: false
+
+jobs:
+  guncelle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Verileri topla
+        run: python veri_topla.py
+      - name: Degisiklikleri kaydet
+        run: |
+          git config user.name "bilgi-ekrani-bot"
+          git config user.email "bilgi-ekrani-bot@users.noreply.github.com"
+          git add docs/
+          if ! git diff --cached --quiet; then
+            git commit -m "Veri guncellemesi"
+            git pull --rebase --autostash
+            git push
+          fi
