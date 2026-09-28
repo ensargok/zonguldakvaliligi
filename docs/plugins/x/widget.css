@@ -1,0 +1,33 @@
+.x-liste{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.7rem}
+.x-liste li{background:var(--panel-2);border-radius:var(--kose);padding:.8rem 1rem}
+.x-ust{display:flex;justify-content:space-between;gap:.6rem;font-size:.95rem}
+.x-ust strong{color:var(--vurgu)}
+.x-ust span{color:var(--soluk)}
+.x-metin{margin:.35rem 0 0;font-size:1.1rem;line-height:1.35;display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;overflow:hidden}
+.x-gorsel{margin-top:.5rem;width:100%;max-height:9rem;object-fit:cover;border-radius:4px;display:block}
+.x-gomulu{display:flex;flex-direction:column;gap:.7rem}
+.x-akis{flex:1 1 0;min-height:0;display:flex;flex-direction:column;background:var(--panel-2);border-radius:var(--kose);overflow:hidden}
+.x-akis-ust{display:flex;align-items:baseline;gap:.6rem;padding:.55rem .9rem;border-bottom:1px solid var(--cizgi)}
+.x-akis-ust strong{color:var(--vurgu);font-size:1.05rem}
+.x-akis-ust span{color:var(--soluk);font-size:.9rem}
+.x-akis-yer{flex:1;min-height:0;overflow:hidden}
+.x-akis-yer iframe{width:100%!important}
+.x-not{font-size:.9rem;color:var(--turuncu);background:var(--panel-2);border-radius:var(--kose);padding:.6rem .8rem}
+.x-liste li.tiklanir:hover{background:var(--cizgi)}
+.x-uyarilar{margin-bottom:.8rem;background:#0b161c;border:2px solid var(--kirmizi);border-radius:var(--kose);padding:.6rem}
+.x-uyarilar h4{margin:0 0 .5rem;font:700 1.3rem/1.1 var(--baslik-font);color:#ff8a80;display:flex;align-items:center;gap:.5rem}
+.x-uyarilar h4::before{content:"";width:.7rem;height:.7rem;border-radius:50%;background:var(--kirmizi);animation:nabiz 1.4s infinite}
+.x-uyarilar .x-liste li{background:#15232b}
+.x-uyarilar .x-metin{-webkit-line-clamp:3}
+.x-detay{display:flex;flex-direction:column;gap:.8rem;max-width:56rem}
+.x-detay .x-ust{font-size:1.2rem}
+.x-detay p{margin:0;font-size:1.4rem;line-height:1.5}
+.x-detay-gorsel{width:100%;max-height:45vh;object-fit:contain;border-radius:var(--kose);background:#000}
+.x-uyari-etiket{align-self:flex-start;background:var(--kirmizi);color:#fff;font-weight:700;padding:.2rem .6rem;border-radius:4px}
+.x-detay-alt{color:var(--soluk);font-size:1rem;border-top:1px solid var(--cizgi);padding-top:.6rem}
+/* Telefon */
+.telefon .x-metin{font-size:1rem}
+.telefon .x-gorsel{max-height:13rem}
+.telefon .x-detay p{font-size:1.05rem}
+.x-detay-alt{border-top:1px solid var(--cizgi);padding-top:.8rem}
+.x-liste li.uyari{box-shadow:inset 0 0 0 2px var(--kirmizi)}

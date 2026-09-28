@@ -1,0 +1,9 @@
+.modul-duyuru .modul-govde{display:flex;align-items:center;gap:1.2rem;padding:0 1.2rem}
+.dy-etiket{background:var(--vurgu);color:#0f2230;font:700 1.35rem/1 var(--baslik-font);padding:.45rem .8rem;border-radius:4px;flex:0 0 auto}
+.dy-pencere{flex:1;overflow:hidden;white-space:nowrap}
+.dy-serit{display:inline-flex;animation:dy-kay linear infinite}
+.dy-serit span{padding-right:4rem;font-size:1.5rem;font-weight:500}
+@keyframes dy-kay{to{transform:translateX(-50%)}}
+.telefon .modul-duyuru .modul-govde{padding:.7rem 1rem}
+.telefon .dy-etiket{font-size:1.05rem}
+.telefon .dy-serit span{font-size:1.1rem}

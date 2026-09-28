@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bilgi Ekranı</title>
+<link rel="stylesheet" href="fontlar.css">
+<link rel="stylesheet" href="pano.css">
+</head>
+<body>
+<header class="ust">
+  <div class="kurum">
+    <div class="kurum-adi" id="kurumAdi">Bilgi Ekranı</div>
+    <div class="kurum-alt" id="kurumAlt"></div>
+  </div>
+  <div class="zaman">
+    <div class="saat" id="saat">--:--</div>
+    <div class="tarih" id="tarih"></div>
+  </div>
+  <div class="araclar">
+    <button class="arac zil" id="uyariBtn" type="button" aria-label="Önemli uyarılar" hidden>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15L6 16Z M10 20.5a2 2 0 0 0 4 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      <span class="zil-sayi" id="uyariSayi">0</span>
+    </button>
+    <button class="arac" id="yenileBtn" type="button" aria-label="Yenile">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.34-5.66M20 4v5h-5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button class="arac" id="ayarBtn" type="button" aria-label="Ayarlar">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Z M19.4 13.5l1.6 1.2-1.8 3.1-1.9-.7a7.6 7.6 0 0 1-1.7 1l-.3 2h-3.6l-.3-2a7.6 7.6 0 0 1-1.7-1l-1.9.7-1.8-3.1 1.6-1.2a7.7 7.7 0 0 1 0-2l-1.6-1.2 1.8-3.1 1.9.7a7.6 7.6 0 0 1 1.7-1l.3-2h3.6l.3 2a7.6 7.6 0 0 1 1.7 1l1.9-.7 1.8 3.1-1.6 1.2a7.7 7.7 0 0 1 0 2Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+    </button>
+  </div>
+</header>
+<section class="uyari-merkezi" id="uyariMerkezi" aria-live="polite"></section>
+<main class="izgara" id="izgara"></main>
+<div class="bilgi-kutusu" id="bilgiKutusu" hidden></div>
+<script src="pano.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+.modul-hava .modul-govde{display:flex;flex-direction:column;gap:1rem}
+.hv-ust{display:flex;align-items:center;gap:1.2rem}
+.hv-ikon{font-size:5.5rem;line-height:1}
+.hv-derece{font:700 6.5rem/.9 var(--baslik-font);font-variant-numeric:tabular-nums}
+.hv-tarif{font-size:1.4rem;color:var(--soluk)}
+.hv-detay{display:grid;grid-template-columns:repeat(4,1fr);gap:.6rem}
+.hv-detay div{display:flex;flex-direction:column}
+.hv-detay span{font-size:.9rem;color:var(--soluk)}
+.hv-detay strong{font-size:1.15rem;font-weight:600}
+.hv-saatlik{display:grid;grid-template-columns:repeat(6,1fr);background:var(--panel-2);border-radius:var(--kose);padding:.7rem .4rem}
+.hv-saatlik div{display:flex;flex-direction:column;align-items:center;gap:.15rem}
+.hv-saatlik strong{font-size:1.2rem}
+.hv-kucuk{font-size:.9rem;color:var(--soluk)}
+.hv-orta{font-size:1.6rem;line-height:1.2}
+.hv-yagis{font-size:.85rem;color:#7fc4e8;min-height:1.1em}
+.hv-gunluk{display:flex;flex-direction:column;flex:1;min-height:0}
+.hv-gun{display:grid;grid-template-columns:1fr 2.5rem 3rem 6rem;align-items:center;padding:.35rem 0;border-top:1px solid var(--cizgi)}
+.hv-gun-ad{font-size:1.15rem}
+.hv-aralik{text-align:right;font-weight:600;font-size:1.15rem;font-variant-numeric:tabular-nums}
+/* Telefon */
+.telefon .hv-ikon{font-size:3.8rem}
+.telefon .hv-derece{font-size:4.6rem}
+.telefon .hv-tarif{font-size:1.1rem}
+.telefon .hv-detay{grid-template-columns:1fr 1fr;row-gap:.5rem}
+.telefon .hv-detay strong{font-size:1rem}
+.telefon .hv-saatlik{padding:.6rem .2rem}
+.telefon .hv-saatlik strong{font-size:1rem}
+.telefon .hv-orta{font-size:1.3rem}
+.telefon .hv-gun{grid-template-columns:1fr 2rem 2.8rem 5.2rem}
+.telefon .hv-gun-ad,.telefon .hv-aralik{font-size:1rem}
